@@ -10,4 +10,8 @@ p = int(input('Введите произведение чесел -> '))
 for x in range(s):
     for y in range(p):
         if s == x + y and p == x * y:
+<<<<<<< HEAD
             print(f'первое число ="{x}", второе число ="{y}"')
+=======
+            print(f'первое число ="{x}", второе число ="{y}"')
+>>>>>>> 10ee57c (Initial commit)
