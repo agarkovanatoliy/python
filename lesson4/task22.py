@@ -23,7 +23,5 @@ while i <= m:
     m_set.add(a)
     i += 1
 
-
-
 n_set.update(m_set)
 print(sorted(n_set))
