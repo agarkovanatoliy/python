@@ -11,3 +11,15 @@
 # заход собирающий модуль, находясь перед некоторым кустом заданной во входном файле грядки.
 #
 # 3 1 2 4
+
+
+
+with open('test.txt', 'r') as f:
+    text = f.read()
+print(text)
+berry = [int(x) for x in text[:].split()]
+print(berry)
+berry_count = list()
+for i in range(len(berry)):
+    berry_count.append(berry[1-2] + berry[i-1] + berry[i])
+print(max(berry_count))
