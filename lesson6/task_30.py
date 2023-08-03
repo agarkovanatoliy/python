@@ -8,8 +8,7 @@
 def array_filling(a1, d, n):
     resalt = []
     for i in range(n):
-        a = a1 + i * d
-        resalt.append(a)
+        resalt.append(a1 + i * d)
     return resalt
 
 a1 = int(input('Введите первый элемент: '))
