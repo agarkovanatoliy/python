@@ -25,17 +25,17 @@ print(data)
 
 print('')
 
-# one_hot_data = pd.get_dummies(data, columns=['whoAmI'])
-# one_hot_data.head()
-# print(one_hot_data) # Здесь почемуто выводит тоько True и False
-
-
-unique_values = data['whoAmI'].unique()
-one_hot_data = pd.DataFrame()
-
-for value in unique_values:
-    one_hot_data[value] = (data['whoAmI'] == value).astype(int)
-
+one_hot_data = pd.get_dummies(data, columns=['whoAmI']).astype(int)
 one_hot_data.head()
-
 print(one_hot_data)
+
+
+# unique_values = data['whoAmI'].unique()
+# one_hot_data = pd.DataFrame()
+#
+# for value in unique_values:
+#     one_hot_data[value] = (data['whoAmI'] == value).astype(int)
+#
+# one_hot_data.head()
+#
+# print(one_hot_data)
